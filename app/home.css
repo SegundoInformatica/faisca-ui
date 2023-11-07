@@ -1,0 +1,25 @@
+div.cards {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+
+  place-items: center;
+}
+
+div.topics {
+  display: flex;
+
+  padding-top: 2rem;
+
+  overflow: auto;
+}
+
+div.topics > * {
+  flex-shrink: 0;
+}

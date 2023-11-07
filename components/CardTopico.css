@@ -1,0 +1,52 @@
+a.card__topico {
+  position: relative;
+
+  width: 360px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  background: var(--color-white);
+
+  box-shadow: 0px 0px 10px 0px var(--color-gray-dimmed);
+}
+
+a.card__topico:hover {
+  cursor: pointer;
+}
+
+a.card__topico svg {
+  position: absolute;
+  top: -25px;
+
+  width: 60px;
+  height: 60px;
+
+  padding: 10px;
+
+  border-radius: 100px;
+}
+
+a.card__topico:nth-of-type(3n + 1) svg {
+  background: var(--color-white);
+  color: var(--color-blue);
+
+  outline: 2px solid var(--color-blue);
+}
+
+a.card__topico:nth-of-type(3n + 2) svg {
+  background: var(--color-white);
+  color: var(--color-pink);
+
+  outline: 2px solid var(--color-pink);
+}
+
+a.card__topico:nth-of-type(3n + 3) svg {
+  background: var(--color-white);
+  color: var(--color-yellow);
+
+  outline: 2px solid var(--color-yellow);
+}
