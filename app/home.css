@@ -14,8 +14,9 @@ div.cards {
 
 div.topics {
   display: flex;
+  gap: 1rem;
 
-  padding-top: 2rem;
+  padding: 2rem;
 
   overflow: auto;
 }
