@@ -64,6 +64,7 @@ header section.search-bar input {
   background: var(--color-white);
 
   padding: 0.5rem 1rem;
+  padding-right: 3rem;
 
   border: none;
   outline: transparent;
