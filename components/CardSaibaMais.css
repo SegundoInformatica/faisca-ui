@@ -9,7 +9,7 @@ div.card__saibamais {
 
   border-radius: 30px;
 
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px var(--color-gray-dimmed);
 }
 
 div.card__image {
