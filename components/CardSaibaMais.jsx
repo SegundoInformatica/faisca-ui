@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import "./Card.css";
+import "./CardSaibaMais.css";
 
-export function SaibaMaisCard({ image, link, children }) {
+export default function CardSaibaMais({ image, link, children }) {
   return (
-    <div className="card">
+    <div className="card__saibamais">
       <div className="card__image">
         {image && (
           <Image src={image} width={150} height={150} alt="Placeholder" />
@@ -13,7 +13,7 @@ export function SaibaMaisCard({ image, link, children }) {
 
       <div className="card__content">{children}</div>
 
-      <a href={link} className="card__saibamais">
+      <a href={link} className="card__button">
         SAIBA MAIS
       </a>
     </div>
