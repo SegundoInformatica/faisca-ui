@@ -99,7 +99,11 @@ header button.hamburguer-menu svg {
 main {
   padding: 3rem;
 
-  min-height: calc(100vh - );
+  min-height: calc(100vh - 15.9rem);
+
+  @media (max-width: 510px) {
+    min-height: calc(100vh - 23.3rem);
+  }
 }
 
 footer {
@@ -118,7 +122,7 @@ footer {
 
   @media (max-width: 510px) {
     align-items: flex-start;
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
