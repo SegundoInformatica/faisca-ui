@@ -63,7 +63,9 @@ header section.search-bar {
 header section.search-bar input {
   background: var(--color-white);
 
-  padding: 0.5rem 1rem;
+  height: 2rem;
+
+  padding: 0 1rem;
   padding-right: 3rem;
 
   border: none;
@@ -80,7 +82,9 @@ header section.search-bar button {
   position: absolute;
   right: -0.5rem;
 
-  padding: 0.5rem 1rem;
+  height: 2rem;
+
+  padding: 0 1rem;
 
   background: var(--color-yellow);
   color: var(--color-primary);
