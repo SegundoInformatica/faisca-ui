@@ -7,8 +7,10 @@ export default function ArtigoHeader({ titulo, resumo }) {
     <div className="artigo-header">
       <section className="textual">
         <h1>{titulo}</h1>
-
-        <article className="audio-control"></article>
+      <audio controls>
+        <source src="/audio/testeaudio.ogg" type="audio/ogg"/>
+      </audio>
+        
 
         <article className="resumo">
           <h2>Resumo</h2>

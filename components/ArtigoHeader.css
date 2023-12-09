@@ -48,3 +48,11 @@ div.artigo-header section.visual img:nth-of-type(3) {
 
   height: calc(480px + 2rem);
 }
+source{
+  color: aqua;
+}
+
+audio{
+  box-shadow: 4px 5px rgb(168, 168, 168);
+  border-radius: 100px;
+}
