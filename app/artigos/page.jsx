@@ -1,23 +1,22 @@
-import Titulo from "@/components/infoArtigo";
-import Artigo from "@/components/Artigo";
-import InfoAdicional from "@/components/infoAdicional";
-
+import ArtigoHeader from "@/components/ArtigoHeader";
+import ArtigoBody from "@/components/ArtigoBody";
+import ArtigoFooter from "@/components/ArtigoFooter";
+import Separator from "@/components/Separator";
 
 export const metadata = {
   title: "Projeto Faísca - Artigos",
 };
 
-
-export default function Home() {
+export default function Artigo() {
   return (
-    <div className="conteiner">
-      <Titulo nome="Titulo do texto" resumo="Resumo" />
-      <br />
-      <hr />
-      <Artigo />
-      <br />
-      <hr />
-      <InfoAdicional autor="Dudu e Sergio" descricao="Dudu e Sergio ue" orientador="Dédé Luiz" coordenador="Deus" data="se Deus quiser hoje" />
-    </div>
+    <>
+      <ArtigoHeader titulo="Titulo" resumo="Resumo" />
+
+      <Separator />
+
+      <ArtigoBody />
+
+      <ArtigoFooter nome="Dudu e Sergio" orientador="Dédé Luis" coordenador="Deus" dataPublicacao="09/12/2023" />
+    </>
   );
 }
