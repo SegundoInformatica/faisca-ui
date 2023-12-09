@@ -1,0 +1,24 @@
+#descricao{
+    color: rgb(103, 103, 103);
+}
+
+p{
+    font-weight:100;
+    margin-bottom: 1px;
+}
+
+#botaopdf{
+    background-color: rgb(215, 177, 25);
+    border-radius: 6px;
+    text-align: center;
+    float: right;
+    padding: 10px 28px 10px 28px;
+    box-shadow: 3px 5px 5px rgb(93, 93, 93); 
+    font-size: 13px;
+    position: relative;
+    bottom: 145px;
+}
+audio{
+    top:40px;
+    position: relative;
+}

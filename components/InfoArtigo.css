@@ -1,0 +1,40 @@
+h1{
+    font-weight:bolder;
+
+}
+h2{
+    font-weight:900;
+    font-size: x-large;
+}
+#resumo{
+    margin-top: 15px;
+    
+}
+
+.imgsGrid{
+display: grid;
+grid-template-areas: 
+    'img1 img3'
+    'img2 img3'
+;
+justify-content: right;
+
+}
+
+.img1{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    grid-area: "img1";
+}
+.img2{
+    border-radius: 5px;
+    grid-area: "img2";
+    
+}
+.img3{
+    border-radius: 5px;
+    grid-area: "img3";
+    margin-right: 20px;
+    margin-top: -180px;
+}
+
