@@ -28,3 +28,7 @@ Este projeto também utiliza várias outras bibliotecas e suas subdependências.
 Obrigado ao apoio e encorajamento de:
 
 - Amanda Macedo Balduino: Pesquisadora responsável do projeto.
+
+---
+
+_Grupo Faísca &copy; 2023_

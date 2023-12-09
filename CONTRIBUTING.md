@@ -77,3 +77,7 @@ git push -u origin recurso/nome-recurso
 Utilizamos a conveção de [ESLint](https://eslint.org/) para identificar e corrigir problemas no código JavaScript.
 Juntamente, temos as configurações herdadas do [ESlint Config Next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next).  
 Um simples `Format` nos arquivos `*.{js,jsx,ts,tsx}` irá formatar automaticamente o código.
+
+---
+
+_Grupo Faísca &copy; 2023_
