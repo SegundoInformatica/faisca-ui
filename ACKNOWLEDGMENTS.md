@@ -9,6 +9,7 @@ Agradeçemos aos seguintes indivíduos por suas contribuições no projeto:
 - [André Albanese Junior (devkcud)](https://github.com/devkcud)
 - [Sergio Gabriel (BlackoutMomo)](https://github.com/BlackoutMomo)
 - [Eduardo Lima (eduardokzh)](https://github.com/eduardokzh)
+- [Leticia Silveira Lemos (leticia-lemos)](https://github.com/leticia-lemos)
 
 ## Recursos e Bibliotecas
 
