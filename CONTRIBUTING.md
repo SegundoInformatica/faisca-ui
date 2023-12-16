@@ -19,7 +19,7 @@ Os prefixos servem como identificadores que ajudam a identificar as alterações
 
 ### Fix
 
-Os commits de correção de erros são aqueles que corrigem erros. Todos os commits `fix` devem ter uma Issue associada.  
+Os commits de correção de erros são aqueles que corrigem erros críticos, como a falha na conexão da API, falha ao renderizar links dinâmicos, falhas de segurança etc. Todos os commits `fix` devem ter uma Issue associada.  
 Exemplo:
 
 ```sh
