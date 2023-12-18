@@ -7,7 +7,7 @@ export default function politicas() {
       <div className="textos">
         <p className="paragrafos">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy t ext
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy t ext
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survivednot only
           five centuries, but also the leap into electronic typesetting,
@@ -18,7 +18,7 @@ export default function politicas() {
         <ul>
           <li>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy t
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy t
           </li>
           <li>
             Txt ever since the 1500s, when an unknown printer took a galley of
@@ -28,20 +28,20 @@ export default function politicas() {
             Not only five centuries, but also the leap into electronic
             typesetting, remaining essentially unchanged. It was popularised in
             the 1960s with the Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry's
+            and typesetting industry. Lorem Ipsum has been the industry&apos;s
             standard dummy t
           </li>
         </ul>
 
         <p className="paragrafos"> 
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged. It was popularised in the 1960s with
           the Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has survived not only
           five centuries, but also the leap into electronic typesetting,
@@ -53,12 +53,12 @@ export default function politicas() {
 
         <p className="paragrafos">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy t ext
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy t ext
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survivednot only
           five centuries, but also the leap into electronic typesetting,
           remaining has survivednot only five centuries, but also the leap into
-          electronic typesetting, remaining
+          electronic typesetting, remaining.
         </p>
       </div>
     </div>

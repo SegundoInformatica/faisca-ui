@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
               <a href="">Sobre</a>
             </li>
             <li>
-              <a href="">Políticas e Privacidade</a>
+              <a href="/politicas">Políticas e Privacidade</a>
             </li>
             <li>
               <a href="">Fale Conosco</a>

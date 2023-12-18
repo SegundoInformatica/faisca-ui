@@ -1,11 +1,5 @@
-.textos {
+div.textos p.paragrafos {
   text-align: justify;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.paragrafos {
-  text-align: justify;
-  margin-top: 25px;
-  margin-bottom: 20px;
 }
