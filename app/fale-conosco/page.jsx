@@ -2,9 +2,9 @@ import "./fale-conosco.css";
 
 export default function faleConosco() {
   return (
-    <>
+    <section>
       <h1> Fale Conosco </h1>
-      <div className="main">
+      <main>
         <div className="content">
           <div className="left">
             <img
@@ -47,14 +47,14 @@ export default function faleConosco() {
               />
             </div>
 
-            <div className="btn-area">
+            <div className="botao-enviar">
               <button type="submit" id="btn">
                 Enviar
               </button>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </main>
+    </section>
   );
 }

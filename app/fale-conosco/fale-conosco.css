@@ -1,4 +1,4 @@
-div.main {
+main {
   display: flex;
   justify-content: center;
 }
@@ -67,7 +67,7 @@ input::placeholder {
   padding: 5px;
 }
 
-.btn-area {
+.botao-enviar {
   margin: 5px 5px 5px 15px;
   padding: auto;
   display: flex;
