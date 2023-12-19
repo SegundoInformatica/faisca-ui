@@ -2,8 +2,8 @@ import './politicas.css';
 
 export default function politicas() {
   return (
-    <section>
-      <h1> Política e privacidade </h1>
+    <section className="politicas">
+      <h1>Política e privacidade</h1>
       <article className="textos">
         <p className="paragrafos">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -61,6 +61,6 @@ export default function politicas() {
           electronic typesetting, remaining.
         </p>
       </article>
-      </section>
+    </section>
   );
 }
