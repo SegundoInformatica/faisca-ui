@@ -1,49 +1,50 @@
 import "./fale-conosco.css";
+import "./layout.css";
 
 export default function faleConosco() {
   return (
-    <section>
-      <h1> Fale Conosco </h1>
-      <main>
+    <main>
+      <section className="card-fale-conosco">
+        <div className="left">
+          <h1> Fale Conosco </h1>
+          <p className="texto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
+            mi nunc. Nullam vel diam id neque imperdiet posuere efficitur
+            accumsan tortor.
+          </p>
+          <img src="/formulario.png" id="img-formulario" />
+        </div>
+
         <div className="content">
-          <div className="left">
-            <img
-              src="/formulario.png"
-              width={350}
-              height={460}
-              id="img-formulario"
-            />
-          </div>
-          
-          <div className="right">
+          <form action="#">
             <div className="card-nome">
               <label> Nome </label>
               <input
-                className="field"
+                className="nome"
                 type="text"
                 name="nome"
-                id="nome"
                 placeholder="Digite seu nome completo"
+                required
               />
             </div>
 
             <div className="card-email">
               <label> Email </label>
               <input
-                className="field"
+                className="email"
                 type="email"
                 name="email"
-                id="email"
                 placeholder="Digite seu email"
+                required
               />
             </div>
 
             <div className="card-mensagem">
               <label> Mensagem </label>
               <textarea
-                className="field"
-                id="mensagem"
+                className="mensagem"
                 placeholder="Digite sua mensagem"
+                required
               />
             </div>
 
@@ -52,9 +53,9 @@ export default function faleConosco() {
                 Enviar
               </button>
             </div>
-          </div>
+          </form>
         </div>
-      </main>
-    </section>
+      </section>
+    </main>
   );
 }

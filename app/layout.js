@@ -44,10 +44,13 @@ export default function RootLayout({ children }) {
 
           <ul className="links">
             <li>
-              <a href="">Sobre</a>
+              <a href="">Sobre Nós</a>
             </li>
             <li>
               <a href="/politicas">Políticas e Privacidade</a>
+            </li>
+            <li>
+              <a href="/equipe">Conheça nossa equipe</a>
             </li>
             <li>
               <a href="/fale-conosco">Fale Conosco</a>

@@ -1,0 +1,105 @@
+@media (max-width: 956px) {
+  main {
+    padding: 40px;
+  }
+
+  div.left {
+    max-width: 40%;
+    margin-right: 40px;
+  }
+
+  div.content {
+    width: 50%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 828px) {
+  div.left {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 776px) {
+  div.left {
+    max-width: 40%;
+    margin-right: 60px;
+  }
+
+  div.content {
+    width: 50%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 720px) {
+  div.left {
+    max-width: 50%;
+    margin: 0px 35px 35px 0px;
+  }
+
+  div.content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 633.6px) {
+  section.card-fale-conosco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #img-formulario {
+    display: none;
+  }
+
+  div.content p.texto {
+    display: flex;
+  }
+
+  p.texto {
+    margin: 15px 0px 0px 0px;
+  }
+
+  div.left {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  div.content {
+    width: 70%;
+    margin: 15px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 35px;
+  }
+
+  p.texto {
+    max-width: 100%;
+    margin: 15px 0px 0px 0px;
+    align-items: center;
+  }
+
+  div.left {
+    max-width: 100%;
+    margin: 0px 0px 15px 0px;
+  }
+
+  div.content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 35px;
+  }
+
+  div.content {
+    width: 100%;
+  }
+}

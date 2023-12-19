@@ -1,5 +1,15 @@
-article.textos p.paragrafos {
+article.textos,
+p.paragrafos {
   text-align: justify;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px 0px 10px 5px;
+}
+
+ul.listas {
+  text-align: justify;
+  margin: 10px 0px 10px 10px;
+}
+
+h3.texto {
+  text-align: justify;
+  margin-top: 40px;
 }

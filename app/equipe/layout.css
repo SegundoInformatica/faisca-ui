@@ -1,0 +1,253 @@
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  div.card h3 {
+    margin: 30px 0px 30px 10px;
+  }
+
+  .integrantes li {
+    max-width: 100%;
+    margin: 0px 0px 15px 10px;
+  }
+
+  .integrantes {
+    margin: 0px 0px 0px 25px;
+  }
+
+  .integrantes-direita {
+    margin: 107px 0px 0px 25px;
+  }
+
+  #img-equipe {
+    width: 175px;
+    height: 125px;
+  }
+
+  div.vetores #estrela-amarela {
+    width: 60%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 18%;
+  }
+
+  div.vetores {
+    margin: 25px 5px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 756px) and (max-width: 1024px) {
+  div.card h3 {
+    max-width: 80%;
+    margin: 30px 0px 30px 10px;
+  }
+
+  .integrantes li {
+    max-width: 100%;
+    margin: 0px 0px 15px 10px;
+  }
+
+  .integrantes {
+    margin: 0px 0px 0px 25px;
+  }
+
+  .integrantes-direita {
+    margin: 107px 0px 0px 25px;
+  }
+
+  #img-equipe {
+    width: 175px;
+    height: 125px;
+  }
+
+  div.vetores #estrela-amarela {
+    width: 55%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 18%;
+  }
+
+  div.vetores {
+    margin: 25px 5px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  div.card h3 {
+    max-width: 75%;
+    margin: 30px 0px 25px 10px;
+  }
+
+  .integrantes li {
+    max-width: 100%;
+    margin: 0px 0px 15px 10px;
+  }
+
+  .integrantes {
+    margin: 0px 0px 0px 25px;
+  }
+
+  .integrantes-direita {
+    width: 100%;
+    margin: 107px 0px 0px 25px;
+  }
+
+  #img-equipe {
+    width: 175px;
+    height: 125px;
+  }
+
+  div.vetores #estrela-amarela {
+    width: 60%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 18%;
+  }
+
+  div.vetores {
+    margin: 25px 5px 0px 0px;
+  }
+}
+
+@media (max-width: 755.2px) {
+  div.card {
+    height: auto;
+  }
+
+  div.card h3 {
+    max-width: 85%;
+    margin: 25px 0px 25px 10px;
+  }
+
+  .integrantes-direita {
+    padding-bottom: 5px;
+    margin: 103px 0px 0px 30px;
+  }
+
+  #img-equipe {
+    width: 150px;
+    height: 115px;
+  }
+
+  div.vetores #estrela-amarela {
+    width: 55%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 20%;
+  }
+
+  div.vetores {
+    margin: 25px 5px 0px 0px;
+  }
+}
+
+@media (max-width: 688px) {
+  div.card {
+    height: auto;
+  }
+
+  div.card h3 {
+    max-width: 90%;
+  }
+
+  .integrantes-direita {
+    padding-bottom: 5px;
+    margin: 103px 0px 0px 30px;
+  }
+
+  .integrantes li {
+    max-width: 100%;
+    margin: 0px 0px 15px 10px;
+  }
+}
+
+@media (max-width: 665px) {
+  div.card h3 {
+    max-width: 95%;
+  }
+
+  #img-equipe {
+    width: 135px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 634px) {
+  div.card h3 {
+    max-width: 100%;
+  }
+
+  #img-equipe {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 612px) {
+  .integrantes {
+    font-size: 16px;
+  }
+
+  #img-equipe {
+    display: none;
+  }
+}
+
+@media (max-width: 588px) {
+  div.card h3 {
+    margin: 30px 0px 25px 10px;
+    width: auto;
+  }
+
+  .integrantes {
+    margin: 0px 0px 0px 5px;
+  }
+
+  .integrantes-direita {
+    margin: 105px 0px 0px 25px;
+  }
+
+  div.vetores #estrela-amarela {
+    width: 60%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 20%;
+  }
+}
+
+@media (max-width: 504px) {
+  .integrantes li {
+    width: 100%;
+  }
+  
+  div.vetores #estrela-amarela {
+    width: 55%;
+  }
+
+  div.vetores #estrela-rosa {
+    width: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  div.card h3 {
+    margin: 25px 0px 20px 10px;
+    width: auto;
+  }
+
+  .integrantes li {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .integrantes {
+    margin: 0px 0px 0px 5px;
+  }
+
+  .integrantes-direita {
+    width: 100%;
+    margin: 105px 0px 0px 25px;
+  }
+}

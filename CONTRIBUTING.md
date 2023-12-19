@@ -19,7 +19,7 @@ Os prefixos servem como identificadores que ajudam a identificar as alterações
 
 ### Fix
 
-Os commits de correção de erros são aqueles que corrigem erros. Todos os commits `fix` devem ter uma Issue associada.  
+Os commits de correção de erros são aqueles que corrigem erros críticos, como a falha na conexão da API, falha ao renderizar links dinâmicos, falhas de segurança etc. Todos os commits `fix` devem ter uma Issue associada.  
 Exemplo:
 
 ```sh
@@ -74,4 +74,10 @@ git push -u origin recurso/nome-recurso
 
 ## Diretrizes de Estilo
 
-**TODO**
+Utilizamos a convenção de [ESLint](https://eslint.org/) para identificar e corrigir problemas no código JavaScript.
+Juntamente, temos as configurações herdadas do [ESlint Config Next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next).  
+Um simples `Format` nos arquivos `*.{js,jsx,ts,tsx}` irá formatar automaticamente o código.
+
+---
+
+_Grupo Faísca &copy; 2023_
