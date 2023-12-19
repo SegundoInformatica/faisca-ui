@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
               <a href="/politicas">Políticas e Privacidade</a>
             </li>
             <li>
-              <a href="">Fale Conosco</a>
+              <a href="/fale-conosco">Fale Conosco</a>
             </li>
           </ul>
 

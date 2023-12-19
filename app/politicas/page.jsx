@@ -2,7 +2,7 @@ import './politicas.css';
 
 export default function politicas() {
   return (
-    <div className="container">
+    <>
       <h1> Política e privacidade </h1>
       <div className="textos">
         <p className="paragrafos">
@@ -61,6 +61,6 @@ export default function politicas() {
           electronic typesetting, remaining.
         </p>
       </div>
-    </div>
+      </>
   );
 }
