@@ -2,9 +2,9 @@ import './politicas.css';
 
 export default function politicas() {
   return (
-    <>
+    <section>
       <h1> Política e privacidade </h1>
-      <div className="textos">
+      <article className="textos">
         <p className="paragrafos">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry&apos;s standard dummy t ext
@@ -60,7 +60,7 @@ export default function politicas() {
           remaining has survivednot only five centuries, but also the leap into
           electronic typesetting, remaining.
         </p>
-      </div>
-      </>
+      </article>
+      </section>
   );
 }
