@@ -2,7 +2,7 @@ import "./fale-conosco.css";
 
 export default function faleConosco() {
   return (
-    <section>
+    <section className="fale-conosco">
       <h1> Fale Conosco </h1>
       <main>
         <div className="content">
