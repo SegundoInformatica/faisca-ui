@@ -4,6 +4,8 @@ import Image from "next/image";
 import "./Audio.css";
 import { useEffect, useRef, useState } from "react";
 
+import { FaPause, FaPlay } from "react-icons/fa6";
+
 export default function Audio({ audioSource }) {
   const audioRef = useRef(null);
   const progressBarRef = useRef(null);
@@ -73,9 +75,9 @@ export default function Audio({ audioSource }) {
 
       <button className="control" onClick={toggleIsPlaying}>
         {isPlaying ? (
-          <Image src="/icons/pause.svg" width={14} height={14} alt="Pause" />
+          <FaPause size={14} />
         ) : (
-          <Image src="/icons/play.svg" width={14} height={14} alt="Play" />
+          <FaPlay size={14} />
         )}
       </button>
 

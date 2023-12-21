@@ -32,6 +32,10 @@ section.audio-box > button.control:hover {
   cursor: pointer;
 }
 
+section.audio-box > button.control svg {
+  fill: var(--color-primary);
+}
+
 section.audio-box > progress {
   display: block;
 
