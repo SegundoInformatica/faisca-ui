@@ -1,4 +1,4 @@
-import Image from "next/image";
+  import Image from "next/image";
 import Audio from "./Audio.jsx";
 import "./ArtigoHeader.css";
 
@@ -12,6 +12,7 @@ export default function ArtigoHeader({ titulo, resumo, audioSource }) {
 
         <article className="resumo">
           <h2>Resumo</h2>
+          
 
           <p>{resumo}</p>
         </article>

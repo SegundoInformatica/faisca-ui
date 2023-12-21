@@ -13,7 +13,9 @@ section.audio-box {
   box-shadow:
     -10px -10px 20px 0px #fafbff,
     10px 10px 20px 0px rgba(22, 27, 29, 0.16);
-}
+    width: fit-content;
+  }
+
 
 section.audio-box > p.title {
   grid-area: ouca;
@@ -68,3 +70,4 @@ section.audio-box > p.time {
 
   font-size: 0.75rem;
 }
+

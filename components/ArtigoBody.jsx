@@ -9,7 +9,7 @@ export default function ArtigoBody() {
   let texts = [];
 
   while (lorem.length > 0) {
-    texts.push(lorem.splice(0, 500).join(" "));
+    texts.push(lorem.splice(0, 355).join(" "));
   }
 
   return (
