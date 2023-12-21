@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import "./Audio.css";
 import { useEffect, useRef, useState } from "react";
-
 import { FaPause, FaPlay } from "react-icons/fa6";
 
 export default function Audio({ audioSource }) {
@@ -12,6 +10,7 @@ export default function Audio({ audioSource }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [totalTime, setTotalTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [draggingProgress, setDraggingProgress] = useState(false);
 
   function toggleIsPlaying() {
     if (isPlaying) {
@@ -69,16 +68,78 @@ export default function Audio({ audioSource }) {
     [audioRef, progressBarRef, isPlaying],
   );
 
+  useEffect(
+    function () {
+      if (!progressBarRef.current) {
+        return;
+      }
+
+      function updateProgressBar(posX) {
+        const rect = progressBarRef.current.getBoundingClientRect();
+        let clickedX = posX - rect.left;
+        clickedX = Math.max(0, Math.min(clickedX, rect.width));
+
+        const newPercent = (clickedX / rect.width) * progressBarRef.current.max;
+        progressBarRef.current.value = newPercent;
+
+        audioRef.current.currentTime = (newPercent / 100) * audioRef.current.duration;
+      }
+
+      function press(event) {
+        event.preventDefault();
+
+        setDraggingProgress(true);
+
+        updateProgressBar(
+          "touches" in event ? event.touches[0].clientX : event.clientX,
+        );
+      }
+
+      function release() {
+        setDraggingProgress(false);
+      }
+
+      function move(event) {
+        if (!draggingProgress) {
+          return;
+        }
+
+        updateProgressBar(
+          "touches" in event ? event.touches[0].clientX : event.clientX,
+        );
+      }
+
+      const currentRef = progressBarRef.current;
+
+      currentRef.addEventListener("mousedown", press);
+      currentRef.addEventListener("touchstart", press);
+
+      document.addEventListener("mouseup", release);
+      document.addEventListener("touchend", release);
+
+      document.addEventListener("mousemove", move);
+      document.addEventListener("touchmove", move);
+
+      return function () {
+        if (currentRef) {
+          currentRef.removeEventListener("mousedown", press);
+          currentRef.removeEventListener("touchstart", press);
+          document.removeEventListener("mouseup", release);
+          document.removeEventListener("touchend", release);
+          document.removeEventListener("mousemove", move);
+          document.removeEventListener("touchmove", move);
+        }
+      };
+    },
+    [progressBarRef, draggingProgress],
+  );
+
   return (
     <section className="audio-box">
       <p className="title">Ouça o texto</p>
 
       <button className="control" onClick={toggleIsPlaying}>
-        {isPlaying ? (
-          <FaPause size={14} />
-        ) : (
-          <FaPlay size={14} />
-        )}
+        {isPlaying ? <FaPause size={14} /> : <FaPlay size={14} />}
       </button>
 
       <progress ref={progressBarRef} value="0" max="100"></progress>
