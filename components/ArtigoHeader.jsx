@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Audio from "./Audio.jsx"
 import "./ArtigoHeader.css";
 
 export default function ArtigoHeader({ titulo, resumo }) {
@@ -7,9 +7,7 @@ export default function ArtigoHeader({ titulo, resumo }) {
     <div className="artigo-header">
       <section className="textual">
         <h1>{titulo}</h1>
-      <audio controls>
-        <source src="/audio/testeaudio.ogg" type="audio/ogg"/>
-      </audio>
+        <Audio />
         
 
         <article className="resumo">
