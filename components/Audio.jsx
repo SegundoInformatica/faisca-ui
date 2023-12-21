@@ -4,25 +4,68 @@ import Image from "next/image";
 import "./Audio.css";
 import { useEffect, useRef, useState } from "react";
 
-export default function Home({ audioSource }) {
+export default function Audio({ audioSource }) {
   const audioRef = useRef(null);
+  const progressBarRef = useRef(null);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [totalTime, setTotalTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
   function toggleIsPlaying() {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+
     setIsPlaying(!isPlaying);
   }
 
-  useEffect(() => {
-    if (!audioRef.current) {
-      return;
-    }
+  function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
 
-    if (isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-  }, [isPlaying, audioSource]);
+    const formattedMinutes = String(minutes).padStart(1, "0");
+    const formattedSeconds = String(remainingSeconds).padStart(2, "0");
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  useEffect(
+    function () {
+      function handleTimeUpdate() {
+        const currentTime = audioRef.current.currentTime;
+        const totalTime = audioRef.current.duration;
+
+        setCurrentTime(currentTime);
+        setTotalTime(totalTime);
+
+        progressBarRef.current.value = (currentTime / totalTime) * 100;
+      }
+
+      function handleMetadata() {
+        const totalTime = audioRef.current.duration;
+        setTotalTime(totalTime);
+      }
+
+      if (!audioRef.current) {
+        return;
+      }
+
+      const currentRef = audioRef.current;
+
+      currentRef.addEventListener("timeupdate", handleTimeUpdate);
+      currentRef.addEventListener("loadedmetadata", handleMetadata);
+
+      return function () {
+        if (currentRef) {
+          currentRef.removeEventListener("timeupdate", handleTimeUpdate);
+          currentRef.removeEventListener("loadedmetadata", handleMetadata);
+        }
+      };
+    },
+    [audioRef, progressBarRef, isPlaying],
+  );
 
   return (
     <section className="audio-box">
@@ -46,9 +89,17 @@ export default function Home({ audioSource }) {
         />
       )}
 
-      <progress value="75" max="100"></progress>
+      <progress ref={progressBarRef} value="0" max="100"></progress>
 
-      <p className="time"><span className="current">0:00</span> / <span className="total">0:00</span></p>
+      <p className="time">
+        <span className="current">
+          {formatTime(currentTime)}
+        </span>{" "}
+        /{" "}
+        <span className="total">
+          {formatTime(totalTime)}
+        </span>
+      </p>
 
       <audio
         src={audioSource}

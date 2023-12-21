@@ -2,13 +2,13 @@ import Image from "next/image";
 import Audio from "./Audio.jsx";
 import "./ArtigoHeader.css";
 
-export default function ArtigoHeader({ titulo, resumo }) {
+export default function ArtigoHeader({ titulo, resumo, audioSource }) {
   return (
     <div className="artigo-header">
       <section className="textual">
         <h1>{titulo}</h1>
 
-        <Audio audioSource="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" />
+        <Audio audioSource={audioSource} />
 
         <article className="resumo">
           <h2>Resumo</h2>
