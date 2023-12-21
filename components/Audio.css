@@ -1,38 +1,36 @@
-.audioBox{
-    border-radius: 50px;
-background: #FFF;
+.audioBox {
+  border-radius: 50px;
+  background: #fff;
 
-/* flutuante2 */
-box-shadow: -10px -10px 20px 0px #FAFBFF, 10px 10px 20px 0px rgba(22, 27, 29, 0.16);
-
+  box-shadow:
+    -10px -10px 20px 0px #fafbff,
+    10px 10px 20px 0px rgba(22, 27, 29, 0.16);
 }
 
-
-svg{
-    fill: #5B84E8;
-    float: right;
-    
+svg {
+  fill: #5b84e8;
+  float: right;
 }
 
-.buttons{
-    align-items:baseline; 
+.buttons {
+  align-items: baseline;
 }
 
 progress {
-    display: block;
-  
-    width: 100%;
-    height: 16px;
-  
-    border: none;
-    border-radius: 100px;
-  }
-  
-  progress:hover {
-    cursor: pointer;
-  }
-  
-  progress::-moz-progress-bar,
-  progress::-webkit-progress-value {
-    background-color: rgb(101, 39, 39);
-  }
+  display: block;
+
+  width: 100%;
+  height: 16px;
+
+  border: none;
+  border-radius: 100px;
+}
+
+progress:hover {
+  cursor: pointer;
+}
+
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color: rgb(101, 39, 39);
+}
