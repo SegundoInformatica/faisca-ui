@@ -1,4 +1,9 @@
 import "./fale-conosco.css";
+import Image from "next/image";
+
+export const metadata = {
+  title: "Projeto Faísca - Fale Conosco",
+};
 
 export default function faleConosco() {
   return (
@@ -7,14 +12,15 @@ export default function faleConosco() {
       <main>
         <div className="content">
           <div className="left">
-            <img
+            <Image
               src="/formulario.png"
               width={350}
               height={460}
               id="img-formulario"
+              alt="Telefone com balões de mensagem"
             />
           </div>
-          
+
           <div className="right">
             <div className="card-nome">
               <label> Nome </label>
