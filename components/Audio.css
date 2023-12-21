@@ -34,5 +34,5 @@ progress {
   
   progress::-moz-progress-bar,
   progress::-webkit-progress-value {
-    background-color: red;
+    background-color: rgb(101, 39, 39);
   }

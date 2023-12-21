@@ -4,7 +4,50 @@ import "./Audio.css";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTimer } from 'react-timer-hook';
+//começo da barra de progresso
+const progressBar = document.getElementById('percent-loaded');
+let isDragging = false;
 
+function updateProgressBar(posX) {
+  const rect = progressBar.getBoundingClientRect();
+  let clickedX = posX - rect.left;
+  clickedX = Math.max(0, Math.min(clickedX, rect.width));
+
+  const newPercent = Math.round((clickedX / rect.width) * progressBar.max);
+  progressBar.value = newPercent;
+  progressBar.innerHTML = newPercent + '%';
+}
+
+function press(event) {
+  event.preventDefault();
+
+  isDragging = true;
+
+  updateProgressBar('touches' in event ? event.touches[0].clientX : event.clientX);
+}
+
+function release() {
+  isDragging = false;
+}
+
+function move(event) {
+  if (!isDragging) {
+    return;
+  }
+
+  updateProgressBar('touches' in event ? event.touches[0].clientX : event.clientX);
+}
+
+progressBar.addEventListener('mousedown', press);
+progressBar.addEventListener('touchstart', press);
+
+document.addEventListener('mouseup', release);
+document.addEventListener('touchend', release);
+
+document.addEventListener('mousemove', move);
+document.addEventListener('touchmove', move);
+
+//começo do codigo
 export default function Home() {
  const audioRef = useRef(null);
  const [isPlaying, setIsPlaying] = useState(false);
@@ -58,6 +101,7 @@ export default function Home() {
        onPause={() => setPlayingState(false)}
      />
      <div>
+     <progress id="percent-loaded" value="75" max="1000"></progress>
      </div>
    </div>
  );
