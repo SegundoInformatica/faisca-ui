@@ -25,27 +25,31 @@ export default function Home({ audioSource }) {
   }, [isPlaying, audioSource]);
 
   return (
-    <div className="audioBox">
-      <div>
-        {isPlaying ? (
-          <Image
-            src="/icons/pause.svg"
-            width={14}
-            height={14}
-            alt="Pause"
-            onClick={toggleIsPlaying}
-          />
-        ) : (
-          <Image
-            src="/icons/play.svg"
-            width={14}
-            height={14}
-            alt="Play"
-            onClick={toggleIsPlaying}
-          />
-        )}
-        <p>Ouça o texto</p>
-      </div>
+    <section className="audio-box">
+      <p className="title">Ouça o texto</p>
+
+      {isPlaying ? (
+        <Image
+          src="/icons/pause.svg"
+          width={14}
+          height={14}
+          alt="Pause"
+          onClick={toggleIsPlaying}
+        />
+      ) : (
+        <Image
+          src="/icons/play.svg"
+          width={14}
+          height={14}
+          alt="Play"
+          onClick={toggleIsPlaying}
+        />
+      )}
+
+      <progress value="75" max="100"></progress>
+
+      <p className="time"><span className="current">0:00</span> / <span className="total">0:00</span></p>
+
       <audio
         src={audioSource}
         autoPlay={true}
@@ -53,9 +57,6 @@ export default function Home({ audioSource }) {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
-      <div>
-        <progress id="percent-loaded" value="75" max="1000"></progress>
-      </div>
-    </div>
+    </section>
   );
 }
