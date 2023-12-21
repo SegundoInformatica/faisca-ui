@@ -1,0 +1,70 @@
+section.audio-box {
+  display: grid;
+  gap: 0.5rem;
+
+  grid-template-areas:
+    "ouca control"
+    "progress time";
+
+  border-radius: 50px;
+
+  padding: 1rem;
+
+  box-shadow:
+    -10px -10px 20px 0px #fafbff,
+    10px 10px 20px 0px rgba(22, 27, 29, 0.16);
+}
+
+section.audio-box > p.title {
+  grid-area: ouca;
+}
+
+section.audio-box > button.control {
+  margin: auto;
+
+  border: none;
+  background: none;
+
+  grid-area: control;
+}
+
+section.audio-box > button.control:hover {
+  cursor: pointer;
+}
+
+section.audio-box > button.control svg {
+  fill: var(--color-primary);
+}
+
+section.audio-box > progress {
+  display: block;
+
+  height: 6px;
+
+  margin: auto 0;
+
+  border-radius: 100px;
+  border: none;
+
+  grid-area: progress;
+
+  transition: height 0.2s ease-in-out;
+}
+
+section.audio-box > progress:hover {
+  cursor: pointer;
+
+  height: 12px;
+}
+
+section.audio-box > progress::-moz-progress-bar,
+section.audio-box > progress::-webkit-progress-value {
+  background-color: var(--color-primary);
+  border-radius: 100px;
+}
+
+section.audio-box > p.time {
+  grid-area: time;
+
+  font-size: 0.75rem;
+}
