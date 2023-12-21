@@ -71,39 +71,23 @@ export default function Audio({ audioSource }) {
     <section className="audio-box">
       <p className="title">Ouça o texto</p>
 
-      {isPlaying ? (
-        <Image
-          src="/icons/pause.svg"
-          width={14}
-          height={14}
-          alt="Pause"
-          onClick={toggleIsPlaying}
-        />
-      ) : (
-        <Image
-          src="/icons/play.svg"
-          width={14}
-          height={14}
-          alt="Play"
-          onClick={toggleIsPlaying}
-        />
-      )}
+      <button className="control" onClick={toggleIsPlaying}>
+        {isPlaying ? (
+          <Image src="/icons/pause.svg" width={14} height={14} alt="Pause" />
+        ) : (
+          <Image src="/icons/play.svg" width={14} height={14} alt="Play" />
+        )}
+      </button>
 
       <progress ref={progressBarRef} value="0" max="100"></progress>
 
       <p className="time">
-        <span className="current">
-          {formatTime(currentTime)}
-        </span>{" "}
-        /{" "}
-        <span className="total">
-          {formatTime(totalTime)}
-        </span>
+        {formatTime(currentTime)} / {formatTime(totalTime)}
       </p>
 
       <audio
         src={audioSource}
-        autoPlay={true}
+        autoPlay={false}
         ref={audioRef}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}

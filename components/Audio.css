@@ -19,13 +19,16 @@ section.audio-box > p.title {
   grid-area: ouca;
 }
 
-section.audio-box > img {
+section.audio-box > button.control {
   margin: auto;
+
+  border: none;
+  background: none;
 
   grid-area: control;
 }
 
-section.audio-box > img:hover {
+section.audio-box > button.control:hover {
   cursor: pointer;
 }
 
