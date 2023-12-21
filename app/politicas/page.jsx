@@ -1,5 +1,9 @@
 import './politicas.css';
 
+export const metadata = {
+  title: "Projeto Faísca - Políticas e Privacidade",
+};
+
 export default function politicas() {
   return (
     <section className="politicas">
