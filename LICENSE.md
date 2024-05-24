@@ -32,4 +32,4 @@ Este software NÃO fornece o código-fonte, e é ILEGAL tentar adquiri-lo, seja 
 
 ---
 
-_Grupo Faísca &copy; 2023_
+_Grupo Faísca &copy; 2023-2024_

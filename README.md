@@ -13,4 +13,4 @@ Esta iniciativa, _inteiramente gratuita_, é um orgulhoso projeto da **Universid
 
 ---
 
-_Grupo Faísca &copy; 2023_
+_Grupo Faísca &copy; 2023-2024_

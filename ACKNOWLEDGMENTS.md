@@ -15,12 +15,9 @@ Agradeçemos aos seguintes indivíduos por suas contribuições no projeto:
 
 Este projeto se beneficia da incrível comunidade de código aberto e das seguintes bibliotecas e recursos:
 
-- [Next.js](https://nextjs.org): Um framework React para construção de aplicativos web.
-- [React](https://react.dev/): Uma biblioteca JavaScript para construção de interfaces de usuário.
-- [React DOM](https://react.dev/): Responsável pela manipulação do DOM em aplicações React.
-- [React Icons](https://react-icons.github.io/react-icons/): Uma biblioteca de ícones React populares.
-- [Eslint](https://eslint.org): Uma ferramenta de linting para identificar e corrigir problemas no código JavaScript.
-- [Eslint Config Next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next): Configuração do ESLint para projetos Next.js.
+- [SvelteKit](https://kit.svelte.dev/): Framework Svelte para construção de aplicativos web.
+- [Eslint](https://eslint.org): Ferramenta de linting para identificar e corrigir problemas no código JavaScript.
+- [Prettier](https://prettier.io/): Formatador de código.
 
 Este projeto também utiliza várias outras bibliotecas e suas subdependências. Agradecemos a toda a comunidade de código aberto por essas contribuições.
 
@@ -32,4 +29,4 @@ Obrigado ao apoio e encorajamento de:
 
 ---
 
-_Grupo Faísca &copy; 2023_
+_Grupo Faísca &copy; 2023-2024_

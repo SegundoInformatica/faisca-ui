@@ -80,4 +80,4 @@ Um simples `Format` nos arquivos `*.{js,jsx,ts,tsx}` irá formatar automaticamen
 
 ---
 
-_Grupo Faísca &copy; 2023_
+_Grupo Faísca &copy; 2023-2024_
